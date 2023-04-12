@@ -1,0 +1,29 @@
+// ==UserScript==
+// @name         for Bing
+// @namespace    http://tampermonkey.net/
+// @version      0.1
+// @description  try to take over the world!
+// @author       Alla Sergeeva
+// @match        http://www.bing.com/*
+// @match        http://www.zapmeta.com/*
+// @icon         data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==
+// @grant        none
+// ==/UserScript==
+document.getElementsById("sb_form_q").value = ["10 самых популярных шрифтов от Google"];
+document.getElementsByName("search")[0];
+
+$0
+<input type=​"text" name=​"q" autocomplete=​"off" value autofocus class=​"search-field__query-input" data-clear-option=​"1" placeholder data-focus-value data-original-value>​
+document.getElementsByName("q")
+NodeList [input.search-field__query-input]0: input.search-field__query-inputlength: 1[[Prototype]]: NodeList
+document.getElementsByName("q")[0]
+<input type=​"text" name=​"q" autocomplete=​"off" value autofocus class=​"search-field__query-input" data-clear-option=​"1" placeholder data-focus-value data-original-value>​
+document.getElementsByName("q")[0].value = ["10 самых популярных шрифтов от Google"];
+
+['10 самых популярных шрифтов от Google']
+$0
+<button type=​"submit" class=​"search-field__submit-button vsi" disabled>​…​</button>​
+document.getElementsByClassName("search-field_submit-button vsi")
+HTMLCollection []length: 0[[Prototype]]: HTMLCollection
+document.getElementsByClassName("search-field_submit-button vsi")[0]
+undefined
